@@ -1,39 +1,48 @@
-// MENU MOBILE
+// MOBILE MENU
 
 const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
 
 menuBtn.addEventListener("click", () => {
-    navLinks.style.display =
-        navLinks.style.display === "flex" ? "none" : "flex";
-});
-
-
-// ANIMATION SCROLL
-
-const sections = document.querySelectorAll("section");
-
-window.addEventListener("scroll", () => {
-
-    sections.forEach(section => {
-
-        const top = window.scrollY;
-        const offset = section.offsetTop - 300;
-        const height = section.offsetHeight;
-
-        if(top >= offset && top < offset + height){
-            section.classList.add("show");
-        }
-
-    });
-
+    if(navLinks.style.display === "flex"){
+        navLinks.style.display = "none";
+    }else{
+        navLinks.style.display = "flex";
+    }
 });
 
 
 // CONTACT BUTTON
 
-const button = document.querySelector("button");
+const contactBtn = document.querySelector(".contact-container button");
 
-button.addEventListener("click", () => {
-    alert("Cảm ơn bạn đã liên hệ!");
+contactBtn.addEventListener("click", () => {
+    alert("Cảm ơn bạn đã liên hệ với tôi!");
+});
+
+
+// BACK TO TOP
+
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", () => {
+
+    // hiện nút khi scroll xuống
+
+    if(window.scrollY > 300){
+        topBtn.style.display = "block";
+    }else{
+        topBtn.style.display = "none";
+    }
+
+});
+
+
+topBtn.addEventListener("click", () => {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
 });

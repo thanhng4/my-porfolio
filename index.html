@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Cá Nhân</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet"
      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -13,6 +20,7 @@
     <!-- HEADER -->
     <header>
         <nav class="navbar">
+
             <div class="logo">MyPortfolio</div>
 
             <ul class="nav-links">
@@ -26,6 +34,7 @@
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
             </div>
+
         </nav>
     </header>
 
@@ -35,17 +44,20 @@
 
         <div class="hero-text">
             <h1>Xin chào, tôi là <span>Ngô Giang Thanh</span></h1>
+
             <h2>Frontend Developer</h2>
+
             <p>
-                Tôi yêu thích lập trình web, thiết kế giao diện hiện đại
-                và xây dựng những sản phẩm sáng tạo.
+                Tôi yêu thích lập trình web, thiết kế giao diện hiện đại,
+                sáng tạo và xây dựng những sản phẩm mang lại trải nghiệm
+                tốt nhất cho người dùng.
             </p>
 
             <a href="#contact" class="btn">Liên hệ với tôi</a>
         </div>
 
         <div class="hero-image">
-            <img src="avatar.png" alt="">
+            <img src="avatar.png" alt="Avatar">
         </div>
 
     </section>
@@ -53,15 +65,17 @@
 
     <!-- ABOUT -->
     <section id="about" class="about">
+
         <h2 class="section-title">Giới thiệu</h2>
 
         <div class="about-content">
             <p>
-                Tôi là sinh viên công nghệ thông tin với niềm đam mê phát triển web.
-                Có kinh nghiệm làm việc với HTML, CSS, JavaScript và luôn học hỏi
-                các công nghệ mới.
+                Tôi là sinh viên công nghệ thông tin với niềm đam mê phát triển website,
+                xây dựng giao diện UI/UX hiện đại và tối ưu trải nghiệm người dùng.
+                Tôi luôn chủ động học hỏi công nghệ mới và không ngừng hoàn thiện kỹ năng.
             </p>
         </div>
+
     </section>
 
 
@@ -72,36 +86,19 @@
 
         <div class="skills-container">
 
-            <div class="skill-card">
-                <h3>HTML</h3>
-            </div>
-
-            <div class="skill-card">
-                <h3>CSS</h3>
-            </div>
-
-            <div class="skill-card">
-                <h3>JavaScript</h3>
-            </div>
-
-            <div class="skill-card">
-                <h3>ReactJS</h3>
-            </div>
-
-            <div class="skill-card">
-                <h3>NodeJS</h3>
-            </div>
-
-            <div class="skill-card">
-                <h3>MySQL</h3>
-            </div>
+            <div class="skill-card"><h3>HTML5</h3></div>
+            <div class="skill-card"><h3>CSS3</h3></div>
+            <div class="skill-card"><h3>JavaScript</h3></div>
+            <div class="skill-card"><h3>ReactJS</h3></div>
+            <div class="skill-card"><h3>NodeJS</h3></div>
+            <div class="skill-card"><h3>MySQL</h3></div>
 
         </div>
 
     </section>
 
 
-    <!-- PROJECTS -->
+    <!-- PROJECT -->
     <section id="projects" class="projects">
 
         <h2 class="section-title">Dự án</h2>
@@ -110,17 +107,17 @@
 
             <div class="project-card">
                 <h3>Website Bán Hàng</h3>
-                <p>Thiết kế website thương mại điện tử.</p>
+                <p>Thiết kế website thương mại điện tử responsive.</p>
             </div>
 
             <div class="project-card">
-                <h3>Ứng dụng Todo App</h3>
-                <p>Quản lý công việc bằng JavaScript.</p>
+                <h3>Todo App</h3>
+                <p>Ứng dụng quản lý công việc bằng JavaScript.</p>
             </div>
 
             <div class="project-card">
                 <h3>Blog Cá Nhân</h3>
-                <p>Xây dựng blog responsive hiện đại.</p>
+                <p>Website blog hiện đại tối ưu trải nghiệm đọc.</p>
             </div>
 
         </div>
@@ -137,7 +134,7 @@
 
             <input type="text" placeholder="Họ tên">
             <input type="email" placeholder="Email">
-            <textarea placeholder="Nội dung"></textarea>
+            <textarea rows="6" placeholder="Nội dung"></textarea>
 
             <button>Gửi</button>
 
@@ -146,10 +143,15 @@
     </section>
 
 
-    <!-- FOOTER -->
     <footer>
-        <p>© 2026 Portfolio | Designed by You</p>
+        <p>© 2026 Portfolio | Designed by Ngô Giang Thanh</p>
     </footer>
+
+
+    <!-- BACK TO TOP -->
+    <button id="topBtn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="script.js"></script>
 
