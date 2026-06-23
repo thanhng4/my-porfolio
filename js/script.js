@@ -14,10 +14,27 @@ menuBtn.addEventListener("click", () => {
 
 // CONTACT BUTTON
 
-const contactBtn = document.querySelector(".contact-container button");
+document
+.getElementById("contactForm")
+.addEventListener("submit", async function(e){
 
-contactBtn.addEventListener("click", () => {
-    alert("Cảm ơn bạn đã liên hệ với tôi!");
+  e.preventDefault();
+
+  const data = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value
+  };
+
+  await fetch(
+    "https://script.google.com/macros/s/AKfycbzMUPt06kuABkTePLjWGftfp9vICBCCY7GcdKnAT5T8G6teYqvUZ7AdFMD7dsVBkVVl/exec",
+    {
+      method: "POST",
+      body: JSON.stringify(data)
+    }
+  );
+
+  alert("Sent successfully");
 });
 
 
